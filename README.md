@@ -19,8 +19,11 @@ To clone this workspace use https or ssh.  https is easier but you will be asked
 Git password each time you interact with Git so it's ok at first but can get tiresome.
 
 Using https:
+
   git clone https://github.com/much2soft/CEBD1160Project.git
+
 Using ssh:
+
   git clone git@github.com:much2soft/CEBD1160Project.git
 
 This will create a folder with all the files on your local PC called "CEBD1160Project".  After it's cloned, go to the folder
