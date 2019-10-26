@@ -2,10 +2,15 @@
 Group Project for CEBD1160
 
 Group Members:
+
 Abdullah
+
 Bhargav
+
 Claire
+
 Christian
+
 Michael
 
 ## How To Download and Upload files to Git
