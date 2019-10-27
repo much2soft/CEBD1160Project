@@ -42,7 +42,7 @@ Once you make a change, you need to stage your change by doing
 
 or to add changes from all files modified,
 
-  git add .
+  git add
 
 The following command will bring up a screen where you can type in your commit message.
 The screen that comes up varies depending on your OS.
