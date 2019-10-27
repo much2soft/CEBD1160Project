@@ -36,13 +36,13 @@ have changed and which branch you're on by doing
 
   git status
 
-Once you make a change, you need to stage your change by doing
+Once you make a change, for example to README.md, you need to stage your change by doing
 
   git add README.md
 
 or to add changes from all files modified,
 
-  git add
+  git add .
 
 The following command will bring up a screen where you can type in your commit message.
 The screen that comes up varies depending on your OS.
@@ -56,13 +56,20 @@ Finally, push your change to the Public server master branch by doing
 Your change will now be public!
 
 If somebody changed the file you were also changing, the above command may fail.
-You can attempt to merge their changes into yours by doing this, but the merged file
+You can attempt to merge their changes into yours by doing "git pull", but the merged file
 might not open correctly in Jupyter Notebook!
 BACKUP YOUR WORK INTO A DIFFERENT FOLDER FIRST!
+The easiest thing to do is to then REVERT your own changes (UNDO ALL) using
+
+  git checkout .
+
+Then now you can pull the most recent version from the server:
 
   git pull origin master
 
-Note that if you are working on a different file, Git will automatically merge in changes and you
-won't need to worry too much about merge conflicts.  So this will probably be the easiest approach.
-For now there is only a master branch.
+Now manually re-do your changes in Jupyter Notebook, then go back to the "git add ." step above.
 
+Note that if everybody works on a different file, Git will automatically merge in changes and you
+won't need to worry too much about merge conflicts.  So this will probably be the easiest approach.
+
+Also, for now there is only a master branch, which is also the simplest to understand right now.
