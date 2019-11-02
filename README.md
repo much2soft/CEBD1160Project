@@ -87,6 +87,7 @@ Now get the laster version from the server:
   git pull origin master
   
 Once master is up-to-date, create a submit branch for you to work on, for example, "test_branch":
+
   git checkout -b test_branch
 
 Now you can make changes to your files in your branch, such as adding a file or modifying one.
