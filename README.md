@@ -1,82 +1,33 @@
 # CEBD1160Project
-Group Project for CEBD1160
 
-Group Members:
+This is a group project for course CEBD1160 at Concordia University in Montreal.  The project work is a simplified version of the Kaggle competition where we are focusing on using different techniques to predict trends in the item sale data over time.  All work is done in Python 3 in Jupyter Notebook using the Anaconda environment. The data must be downloaded from the Kaggle competition and placed into the "data" folder before running the examples:
 
-Abdullah
+https://www.kaggle.com/c/competitive-data-science-predict-future-sales/overview
 
-Bhargav
 
-Claire
+# Libraries used
 
-Christian
+Pandas
 
-Michael
+Matplotlib
 
-## How To Download and Upload files to Git
+Prophet
 
-To clone this workspace use https or ssh.  https is easier but you will be asked for your
-Git password each time you interact with Git so it's ok at first but can get tiresome.
+Keras / Tensorflow
 
-Using https:
+## Group Members:
 
-  git clone https://github.com/much2soft/CEBD1160Project.git
+Abdullah (abdullahcn)
 
-Using ssh:
+Bhargav (bparekh2)
 
-  git clone git@github.com:much2soft/CEBD1160Project.git
+Christian (tchatec)
 
-This will create a folder with all the files on your local PC called "CEBD1160Project".  After it's cloned, go to the folder
+Claire (C-SUN19)
 
-  cd CEBD1160Project
+Michael (much2soft)
 
-This folder is being tracked by Git, so all changes made here can be uploaded to
-the public folder.  Once you make a change to a file in this folder, you can see which files
-have changed and which branch you're on by doing
-
-  git status
-
-### Method 1: Merge directly to master
-
-Once you make a change, for example to README.md, you need to stage your change by doing
-
-  git add README.md
-
-or to add changes from all files modified,
-
-  git add .
-
-The following command will bring up a screen where you can type in your commit message.
-The screen that comes up varies depending on your OS.
-
-  git commit
-
-Finally, push your change to the Public server master branch by doing
-
-  git push origin master
-
-Your change will now be public!
-
-If somebody changed the file you were also changing, the above command may fail.
-You can attempt to merge their changes into yours by doing "git pull", but the merged file
-might not open correctly in Jupyter Notebook!
-BACKUP YOUR WORK INTO A DIFFERENT FOLDER FIRST!
-The easiest thing to do is to then REVERT your own changes (UNDO ALL) using
-
-  git checkout .
-
-Then now you can pull the most recent version from the server:
-
-  git pull origin master
-
-Now manually re-do your changes in Jupyter Notebook, then go back to the "git add ." step above.
-
-Note that if everybody works on a different file, Git will automatically merge in changes and you
-won't need to worry too much about merge conflicts.  So this will probably be the easiest approach.
-
-Also, for now there is only a master branch, which is also the simplest to understand right now.
-
-### Method 2: Open a Pull Request
+### Opening a Pull Request
 
 Make sure your master branch is up to date.  To do this, first make sure you're on the master branch
 
@@ -101,7 +52,9 @@ Now create a commit the changes to your local branch with a commit message:
   git commit
 
 Finally, push the changes from your branch to the server.  In this case we are pushing our
-local version (origin) to a new branch on the server with the same name called "test_branch":
+local version (origin) to a new branch on the server with the same name called "test_branch".
+Once you push your branch to the server, your changes are public and other group members can see
+your work:
 
   git push origin test_branch
 
@@ -110,19 +63,8 @@ Click that, then add people as reviewers by clicking on the Gear icon on the top
 Once the reviewers approve, click on "merge" and then your branch will be merged to the
 master branch.
 
-Your changes are now public!
+Your changes are now public and in the master branch!
 
 At this point you can safely delete your "test_branch" on the server using the Git Web interface,
 since the purpose of this branch was just for submission.  There is button to do that after you
 merge your change.
-
-You can also delete your submit branch on your local workspace. To do this, first go back to
-the master branch:
-
-  git checkout origin/master
-
-Now delete your submit branch
-
-  git branch -D test_branch
-
-
