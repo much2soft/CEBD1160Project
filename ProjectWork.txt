@@ -1,4 +1,4 @@
-1. data exploration
+1. data exploration  (Bhargav)
    create visualization use seaborn library
    use 3D and lots of colors where possible
    plot a few plots in each row
@@ -6,23 +6,31 @@
    visualization might need to be stored in a different location since
      files will be large
 
-2a. readme.MD
-2b. wiki page
-2c. organize git repo so it makes sense for external visitors
-
-3. looper to run all data
+2a. readme.MD  (Mike)
+2b. organize git repo so it makes sense for external visitors
+    folders:
+       data
+       exploration
+       tools
+       prophet
+       lstm
+       
+3a. Prophet looper to run all data (Mike)
+3b. LSTM Looper  (Abdullah)
    need to report any problems
    create plots
    create tables
    make sure memory is not increasing too much as you run so that all items can be
       calculated
 
-4. Prophet single run function
+4a. Prophet single run function  (Claire)
    create a function that can predict Nov 2015 given a dataframe in a certain format
    needs to be in the form of a function
    use the agreed upon setting for Prophet and pre-processing
 
-5. Cleaning data
+4b.  LSTM Method (Bhargav)
+
+5. Cleaning data (Claire)
    remove outliers, negative cnt items, find bad data
    - if items have only two months of data we need to predict 0 or remove them (item 9242)
    - items don't have any data for 3 or 4 months before Nov 2015 we might want to exclude
@@ -31,14 +39,9 @@
      "WARNING:fbprophet:Optimization terminated abnormally. Falling back to Newton."
    - work with person doing 3 and 4
 
-6. Performance Analysis (Error)
+6. Performance Analysis RMSE (Christian)
    use 1/3 of data as a "test" set and compare our model in 4) with that data
    could compare with other models in task 7
-
-7. Alternative model discussions
-   - Neural Networks and LSTM
-   - ARIMA
-   - k-means clustering
 
 
 
